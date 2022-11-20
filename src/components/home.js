@@ -13,7 +13,7 @@ export function Home(){
     return(
         <div className=" home d-flex flex-column flex-lg-row justify-content-around gap-5 align-items-center text-black">
             <User/>
-            <Chat hex={hex} hex2={hex2} name={name}/>   
+            <Chat hex={hex} hex2={hex2}/>   
         </div>
     )
 }
