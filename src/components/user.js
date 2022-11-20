@@ -1,6 +1,6 @@
 import { CustomButton } from "./button"
 
-export function User({setName}){
+export function User(){
 
     function newUser(e){
        e.preventDefault()
