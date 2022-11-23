@@ -98,7 +98,7 @@ export function Chat({name}){
             return (<>
                 <h5 key={d.name}> {d.name} </h5>
                 <div className=" d-flex">
-                    <li key={index} className="">
+                    <li key={index}>
                         <span> {d.msg} </span>
                         <span className=" time"> {d.time} </span>
                     </li>
