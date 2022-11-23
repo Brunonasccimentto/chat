@@ -52,7 +52,6 @@
 
 .contentMessage h5{
     display: flex;
-    justify-content: end;
     font-weight: bold;
     font-size: 16px;
     align-items: center;
@@ -71,7 +70,6 @@
 .time{
     font-size: 10px;
     align-self: flex-end;
-    color: gray;
     margin-bottom: -6px;
 }
 

@@ -1,12 +1,13 @@
 import { CustomButton } from "./button"
 
-export function User(){
+export function User({setName}){
 
     function newUser(e){
        e.preventDefault()
 
        let user = document.forms[0].elements[0]      
        localStorage.setItem("user", user.value)
+       setName(user.value)
 
        if(user.value !== ""){
             document.getElementsByClassName("userForm")[0].classList.add("d-none")
