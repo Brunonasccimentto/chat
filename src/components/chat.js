@@ -26,6 +26,8 @@ export function Chat({name}){
         } 
         socket.emit("new_message", { msg: message, name: name, time: date})
         document.getElementsByClassName("messages")[0].value = ""
+
+        compareNames()
     }
 
     function compareNames(){
@@ -97,8 +99,8 @@ export function Chat({name}){
         let list = chat.map((d, index) => {
             return (<>
                 <h5 key={d.name}> {d.name} </h5>
-                <div className=" d-flex">
-                    <li key={index}>
+                <div className=" d-flex ">
+                    <li key={index} className=" text-light bg-primary">
                         <span> {d.msg} </span>
                         <span className=" time"> {d.time} </span>
                     </li>
@@ -110,7 +112,7 @@ export function Chat({name}){
         setChat(list)
 
         compareNames()
-    }, [localStorage.getItem("user")])
+    }, [name])
    
     function pickemoji(){
         let emoji = document.getElementsByClassName("setEmoji")[0]
@@ -119,7 +121,7 @@ export function Chat({name}){
 
     useEffect(()=>{
 
-        if(emoji != ""){
+        if(emoji !== ""){
             document.getElementsByClassName("messages")[0].value += emoji
         }
 

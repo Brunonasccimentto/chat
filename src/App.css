@@ -45,7 +45,7 @@
     min-width: 30%;
     padding: 6px;
     border-radius: 20px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
     margin-right: 10px;
     flex-wrap: wrap;
 }
