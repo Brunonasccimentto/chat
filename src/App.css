@@ -7,6 +7,7 @@
 
 .userForm{
     width: 100%;
+    height: 30%;
 }
 
 .userChat{
@@ -20,7 +21,7 @@
 }
 
 .messages{
-    width: 80%;
+    width: 90%;
 }
 
 .contentMessage::-webkit-scrollbar {
@@ -78,9 +79,11 @@
     .userChat{
         width: 30%;
         height: 720px;
+        
     }
 
     .userForm{
         width: 30%;
+        background-color: aqua;
     }
 }

@@ -96,20 +96,23 @@ export function Chat({name}){
         //first render chat
         let chat = JSON.parse(localStorage.getItem("chat"))
 
-        let list = chat.map((d, index) => {
-            return (<>
-                <h5 key={d.name}> {d.name} </h5>
-                <div className=" d-flex ">
-                    <li key={index} className=" text-light bg-primary">
-                        <span> {d.msg} </span>
-                        <span className=" time"> {d.time} </span>
-                    </li>
-                </div>
-
-            </>)
-
-        })
-        setChat(list)
+        try{
+            let list = chat.map((d, index) => {
+                return (<>
+                    <h5 key={d.name}> {d.name} </h5>
+                    <div className=" d-flex ">
+                        <li key={index} className=" text-light bg-primary">
+                            <span> {d.msg} </span>
+                            <span className=" time"> {d.time} </span>
+                        </li>
+                    </div>
+    
+                </>)
+    
+            })
+            setChat(list)
+        } catch {}
+       
 
         compareNames()
     }, [name])
