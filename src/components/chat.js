@@ -131,7 +131,7 @@ export function Chat({name}){
     },[emoji])
 
     return(
-        <div className=" userChat d-flex p-1 border border-3 border-dark rounded-4 gap-4 flex-column justify-content-between" >
+        <div className=" userChat d-flex p-1 border border-2 border-dark rounded-4 gap-4 flex-column justify-content-between" >
             <div className="contentMessage p-1 gap-3 d-flex flex-column h-100 list-unstyled bg-white overflow-auto"> 
                 {chat}
             </div>
