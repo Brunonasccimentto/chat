@@ -4,7 +4,7 @@ import io from "socket.io-client"
 import Emoji from "emoji-picker-react"
 import {BsEmojiSmile} from "react-icons/bs"
 
-const socket = io.connect("https://chat-server-back.herokuapp.com/") //https://chat-server-back.herokuapp.com/
+const socket = io.connect("chat-server-production-1978.up.railway.app") //https://chat-server-back.herokuapp.com/
 
 export function Chat({name}){
 
